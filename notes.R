@@ -24,6 +24,22 @@
         if there are messages like "github will replace LF with CRLF:
             dont worry. LF is the windows coding for line end, CRLS is the unix coding for line end.
                 many files written on windows use LF
+        it isnt possible to merge two branches from the RStudio UI
+            use either the command line for that, or a separate gui (i installed gitKraken)
+        merge conflicts
+            some git-UIs (e.g. git-kraken, VSCode) have special merge-conflict editors.
+            but its also customary to resolved conflicts the "command-line way":
+                either by aborting the merge, editing the files so they no longer conflict, then merging again.
+                or by continuing the merge, which enters git into a special "conflict resolution" state
+                    in this state one first removes the conflicts by editing the files, then just stages these changes and commits them, which also commits the merge.
+                    in this state the functionality is special:
+                        the conflicting files contain special code sections ("conflict markers") indicating the position and nature of conflicts.
+                            the conflict markers consist of special symbols, encasing two sections which represent the two conflicting code snippets
+                            To resolve the conflict edit these special conflict markers such that they are no mor there and the file looks like it should after the merge.
+                                so in the simplest case one just deletes one of the two contained code snippets and all the special symbols to solve the conflict
+                        the next commit will become the merge commit
+                            so put a commit message in there that fits that
+            
                 
     github does (partially?) understand markdown, but neither html nor R-Markdown
         to nicely display R-Markdown documents on github, use output mode "github-document" (this is not available in the RStudio menus, so it has to be hand-edited into the header of the rmd file, see testRMArkdownDucomen.rmd)
