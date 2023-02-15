@@ -1,8 +1,12 @@
 '
     basic literature:
         https://happygitwithr.com/https-pat.html
-            https://happygitwithr.com/shell.html#shell
+            an general introduction about using the command line:
+                https://happygitwithr.com/shell.html#shell
         https://www.rstudio.com/resources/webinars/managing-part-2-github-and-rstudio/
+    further literature:
+        a commented collection of literature:
+            https://happygitwithr.com/resources.html#resources
     to use something like notepad++ for git commands (i have selected VSCode during the install because i didnt have notepad++ installed):
         enter something this to a suitable terminal: 
             git config --global core.editor "'C:\\Program Files\\Notepad++\\notepad++.exe'"
@@ -25,5 +29,16 @@
         to nicely display R-Markdown documents on github, use output mode "github-document" (this is not available in the RStudio menus, so it has to be hand-edited into the header of the rmd file, see testRMArkdownDucomen.rmd)
             this is just markdown doecument specifically designed for display on github
         note: internally when rstudio converts rmd to html it creates md as an intermediate step. it can be configured to keep that, so you get both html and something github understands
-            
+        
+        
+        
+        
+
+
+    words to look up
+        remote
+        track
+        pull
+        fetch
+        push
 '
