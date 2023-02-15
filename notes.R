@@ -20,4 +20,10 @@
         if there are messages like "github will replace LF with CRLF:
             dont worry. LF is the windows coding for line end, CRLS is the unix coding for line end.
                 many files written on windows use LF
+                
+    github does (partially?) understand markdown, but neither html nor R-Markdown
+        to nicely display R-Markdown documents on github, use output mode "github-document" (this is not available in the RStudio menus, so it has to be hand-edited into the header of the rmd file, see testRMArkdownDucomen.rmd)
+            this is just markdown doecument specifically designed for display on github
+        note: internally when rstudio converts rmd to html it creates md as an intermediate step. it can be configured to keep that, so you get both html and something github understands
+            
 '
